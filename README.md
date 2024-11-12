@@ -40,7 +40,7 @@ Compress the dump into a .tar.gz file.
 Upload the compressed file to the specified DigitalOcean Space.
 Clean up temporary backup files from the local machine.
 
-	Example Output:
+Example Output:
 
 		Creating backup for database: logistics_db...
 Backup created and compressed as mysql_backup_2024-11-12.tar.gz
@@ -55,7 +55,7 @@ Restore Script
 Running the Restore Script:
             ./db_restore.sh
 	
-	The script will:
+The script will:
 
 Download the specified .tar.gz backup file from DigitalOcean Spaces.
 Extract the .sql file from the .tar.gz archive.
