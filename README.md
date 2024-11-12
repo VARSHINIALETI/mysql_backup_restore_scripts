@@ -10,14 +10,15 @@ s3cmd: s3cmd is required to upload and download files from DigitalOcean Spaces. 
 s3cmd Setup for DigitalOcean
 
 Install s3cmd (if not already installed):
-sudo apt-get install s3cmd  # For Debian/Ubuntu systems
+		sudo apt-get install s3cmd  # For Debian/Ubuntu systems
 Configure s3cmd for DigitalOcean Spaces
-Run s3cmd configuration:s3cmd --configure
+Run s3cmd configuration:
+		s3cmd --configure
 Enter your DigitalOcean Access Key and Secret Key.
 For the endpoint, use https://nyc3.digitaloceanspaces.com or another region, like https://ams3.digitaloceanspaces.com for Amsterdam.
 Verify Configuration
 Run a simple command to confirm s3cmd is configured correctly:
-	s3cmd ls s3://your-space-name
+		s3cmd ls s3://your-space-name
 
 Usage
 Backup Script
