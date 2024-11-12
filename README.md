@@ -32,9 +32,10 @@ DO_BUCKET_NAME: The name of your DigitalOcean Space bucket.
 DO_BACKUP_FOLDER_NAME: The folder within the bucket where backups will be stored.
 
 Running the Backup Script:
-	./db_backup.sh
 	
-	The script will:
+ 		./db_backup.sh
+	
+The script will:
 Create a MySQL dump.
 Compress the dump into a .tar.gz file.
 Upload the compressed file to the specified DigitalOcean Space.
@@ -53,7 +54,8 @@ Restore Script
 	The restore script downloads the latest backup from DigitalOcean Spaces, extracts it, and restores it to the specified MySQL database.
 
 Running the Restore Script:
-            ./db_restore.sh
+            
+	    ./db_restore.sh
 	
 The script will:
 
